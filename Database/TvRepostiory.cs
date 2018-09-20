@@ -105,6 +105,7 @@ namespace Tv.Database
         }
         public async Task<List<LineChartViewModel>> GetLineChartCountAsync(int categoryId)
         {
+            
             List<LineChartViewModel> lineCharts = new List<LineChartViewModel>();
             var query = from g in context.Garbages
                         join sub in context.GCSubCategories on g.SubId equals sub.SubId
