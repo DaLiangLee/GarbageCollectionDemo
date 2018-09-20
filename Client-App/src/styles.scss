@@ -1,0 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '~ngx-toastr/toastr-bs4-alert';
+@import '../node_modules/angular2-busy/build/style/busy.css'

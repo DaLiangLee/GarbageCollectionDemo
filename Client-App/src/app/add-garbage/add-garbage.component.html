@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <form class="form-horizontal" #loginForm="ngForm"[ngBusy]="busy" (ngSubmit)="onSubmit(loginForm)">
+        <div class="form-group">
+          <div class="col-sm-10">
+            <div class="form-group">
+              <label for="name">总类别</label>
+              <angular2-multiselect [data]="generalCategoryList" required [(ngModel)]="formModel.generalCate" [settings]="categorysettings" (onSelect)="onCategorySelect($event)"
+                name="generalCate"   (onDeSelect)="OnItemDeSelect($event)"  #generalCate="ngModel">
+              </angular2-multiselect>
+            </div>
+            <div [hidden]="generalCate.valid || generalCate.pristine"
+                class="alert alert-danger">
+              请选择类别
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-10">
+            <div class="form-group">
+              <label for="name">子分类</label>
+              <angular2-multiselect  required [data]="subcategoryList" [(ngModel)]="formModel.subCate" [settings]="subCategorysettings"
+                name="subCate" #subCate="ngModel">
+              </angular2-multiselect>
+            </div>
+            <div [hidden]="subCate.valid || subCate.pristine"
+                class="alert alert-danger">
+              请选择类别
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-10">
+            <div class="form-group">
+              <label for="name">数量</label>
+              <input type="number" required name="recyclingQty" [(ngModel)]="formModel.recyclingQty" class="form-control"  #recQty="ngModel">
+            </div>
+            <div [hidden]="recQty.valid || recQty.pristine"
+                class="alert alert-danger">
+              请填写数量
+            </div>
+            <div [hidden]="recQty.value > 0"
+                class="alert alert-danger">
+              数量必须大于零
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-xs-12 col-12 col-md-4 form-group">
+            <label for="date">选择时间</label>
+            <input type="text" id="date" placeholder="Datepicker" name="createdDate" [(ngModel)]="formModel.createdDate" class="form-control" bsDatepicker
+            [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10 form-group">
+            <button type="submit" class="btn btn-primary btn-block" [disabled]="!loginForm.form.valid || disableSaveBtn">保存</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+

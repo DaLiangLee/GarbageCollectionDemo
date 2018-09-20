@@ -1,0 +1,17 @@
+<div class="card card-accent-info">
+  <div class="card-body">
+    <!-- <h4 class="card-title">Some ECharts event-emitters</h4> -->
+    <div class="mt-4">
+        <div class="row">
+          <div class="col-md-6">
+            <div echarts [options]="options" class="demo-chart"
+              [detectEventChanges]="detectEventChanges"
+              (chartInit)="onChartEvent($event, 'chartInit')"
+            ></div>
+          </div>
+          <div class="col-md-6">
+            <app-pie-chart></app-pie-chart>
+          </div>
+    </div>
+  </div>
+</div>

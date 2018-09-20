@@ -1,0 +1,11 @@
+D:\Projects\GarbageCollection\bin\Debug\netcoreapp2.0\GarbageCollection.deps.json
+D:\Projects\GarbageCollection\bin\Debug\netcoreapp2.0\GarbageCollection.runtimeconfig.json
+D:\Projects\GarbageCollection\bin\Debug\netcoreapp2.0\GarbageCollection.runtimeconfig.dev.json
+D:\Projects\GarbageCollection\bin\Debug\netcoreapp2.0\GarbageCollection.dll
+D:\Projects\GarbageCollection\bin\Debug\netcoreapp2.0\GarbageCollection.pdb
+D:\Projects\GarbageCollection\obj\Debug\netcoreapp2.0\GarbageCollection.csprojAssemblyReference.cache
+D:\Projects\GarbageCollection\obj\Debug\netcoreapp2.0\GarbageCollection.csproj.CoreCompileInputs.cache
+D:\Projects\GarbageCollection\obj\Debug\netcoreapp2.0\GarbageCollection.AssemblyInfoInputs.cache
+D:\Projects\GarbageCollection\obj\Debug\netcoreapp2.0\GarbageCollection.AssemblyInfo.cs
+D:\Projects\GarbageCollection\obj\Debug\netcoreapp2.0\GarbageCollection.dll
+D:\Projects\GarbageCollection\obj\Debug\netcoreapp2.0\GarbageCollection.pdb

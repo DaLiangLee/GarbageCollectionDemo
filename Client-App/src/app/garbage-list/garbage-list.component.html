@@ -1,0 +1,31 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-12">
+      <div class="content-wrapper">
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <!-- <th>#</th> -->
+                <th>回收类别</th>
+                <th>回收时间</th>
+                <th>回收数量</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let content of garbageList">
+                <!-- <th scope="row">{{content}}</th> -->
+                <td>{{content.subCategoryName}}</td>
+                <td>{{content.createdTime | date:"yyyy-MM-dd"}}</td>
+                <td>{{content.recyclingQty}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- <pagination [totalItems]="contentArray.length" (pageChanged)="pageChanged($event)"></pagination> -->
+    </div>
+  </div>
+
+</div>

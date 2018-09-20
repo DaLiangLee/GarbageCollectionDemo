@@ -1,0 +1,5 @@
+D:\Projects\GarbageCollection
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=GarbageCollection
+--content-root=D:\Projects\GarbageCollection
+--file=
